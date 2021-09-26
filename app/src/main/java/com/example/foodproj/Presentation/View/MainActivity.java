@@ -1,10 +1,14 @@
 package com.example.foodproj.Presentation.View;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
             // Update the cached copy of the words in the adapter.
             adapter.submitList(foods);
         });
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{Manifest.permission.READ_CONTACTS},1);
     }
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -54,6 +60,11 @@ public class MainActivity extends AppCompatActivity {
                     R.string.empty_not_saved,
                     Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void contactList(View view) {
+        Intent intent = new Intent(this,ContactActivity.class);
+        startActivity(intent);
     }
 }
 
