@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dumas/AndroidStudioProjects/androidApp_bdformobile/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/dumas/AndroidStudioProjects/androidApp_bdformobile/app/src/main/res/layout/activity_new_food.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/dumas/AndroidStudioProjects/androidApp_bdformobile/app/src/main/res/layout/lv_item.xml" value="0.1" />
+        <entry key="..\:/Users/dumas/AndroidStudioProjects/androidApp_bdformobile/app/src/main/res/layout/recyclerview_item.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/dumas/FoodProj/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.21875" />
         <entry key="..\:/Users/dumas/FoodProj/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/dumas/FoodProj/app/src/main/res/layout/activity_new_food.xml" value="0.1" />
