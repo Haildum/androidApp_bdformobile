@@ -62,7 +62,6 @@ public class CustomAdapter extends BaseAdapter {
 
             convertView.setTag(holder);
         }else {
-            // the getTag returns the viewHolder object set as a tag to the view
             holder = (ViewHolder)convertView.getTag();
         }
 

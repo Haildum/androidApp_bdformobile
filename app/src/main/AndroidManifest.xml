@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.foodproj">
+    package="com.example.foodproj" >
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" >
+        <activity
+            android:name=".Presentation.View.ConverterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConverterValueActivity"
+            android:exported="true"
+            android:label="@string/title_activity_converter_value"
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".Presentation.View.MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +31,6 @@
         </activity>
         <activity android:name=".Presentation.ViewModel.NewFoodActivity" />
         <activity android:name=".Presentation.View.ContactActivity" />
-
     </application>
 
 </manifest>

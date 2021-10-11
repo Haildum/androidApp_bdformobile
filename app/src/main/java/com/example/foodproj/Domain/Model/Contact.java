@@ -1,7 +1,13 @@
 package com.example.foodproj.Domain.Model;
 
+
+import androidx.room.ColumnInfo;
+
 public class Contact {
-    private String name, number;
+    @ColumnInfo(name = "contact_name")
+    private String name;
+    @ColumnInfo(name = "contact_number")
+    private String number;
 
     public String getName() {
         return name;

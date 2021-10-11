@@ -39,5 +39,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="converter"
+        android:text="Конвертер"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="16dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="683dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

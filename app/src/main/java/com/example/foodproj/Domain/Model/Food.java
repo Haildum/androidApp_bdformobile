@@ -3,6 +3,7 @@ package com.example.foodproj.Domain.Model;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
+import androidx.room.Embedded;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -16,6 +17,8 @@ public class Food {
     public String price;
     @ColumnInfo
     public Boolean in_cart;
+
+    @Embedded public Contact contact;
 
     public Food(String name, String price, Boolean in_cart) {
         this.name = name;

@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ContactActivity.class);
         startActivity(intent);
     }
+    public void converter (View view) {
+        Intent intent = new Intent(this,ConverterActivity.class);
+        startActivity(intent);
+    }
+
 }
 
 
